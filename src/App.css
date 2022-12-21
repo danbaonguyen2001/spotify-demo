@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.playing__music {
+  background-color: #0f172a !important;
+  height: 6rem;
+  color: white !important;
+}
+
+::selection {
+  background-color: transparent;
+  color: turquoise;
+}
