@@ -11,6 +11,7 @@ import { useState } from "react";
 
 function App() {
   const [song, setSong] = useState(DataSongs[0]);
+  console.log(song);
 
   const handleSetSong = (idSong) => {
     const song = DataSongs.find((song) => song.id === idSong);
