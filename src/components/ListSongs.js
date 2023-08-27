@@ -19,7 +19,7 @@ export default function ListSongs() {
     window.scrollY(position + pos);
   };
   return (
-    <div className="col-span-2 overflow-y-scroll">
+    <div className="col-span-1 md:col-span-2 overflow-y-scroll ">
       <table className="table-auto w-full">
         <thead className="text-white h-12">
           <tr>
@@ -41,7 +41,7 @@ export default function ListSongs() {
               onClick={() => handleClickSong(song.id)}
             >
               <th>{index + 1}</th>
-              <th>{song.name}</th>
+              <th className="line-clamp-2">{song.name}</th>
               <th>{song.author}</th>
               <th>
                 <a href={song.url}>
